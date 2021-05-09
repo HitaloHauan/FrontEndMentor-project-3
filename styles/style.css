@@ -1,0 +1,51 @@
+    /* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+    /*  Styles */
+
+html {
+    background-color: #fafafa;
+}
+
+body {
+    font-family: Ubuntu, Overpass, sans-serif;
+    font-weight: 16px;
+    font-weight: 400;
+}
+
+.header {
+    height: 600px;
+    width: 100vw;
+    background-image: linear-gradient( to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    border-radius: 0 0 0 90px;
+}
+
+.header-content {
+    width: 100vw;
+    height: 600px;
+    background-image: url(/images/bg-pattern-intro.svg);
+    background-position: -300px -1350px;
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    
+    padding: 60px 160px;
+    height: 50px;
+}
+
+.header-nav__blogr h1 {
+    font-size: 40px;
+}
+
+.header-nav__blogr a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
