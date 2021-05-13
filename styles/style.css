@@ -24,13 +24,13 @@ body {
 
 .header {
     height: 600px;
-    width: 100vw;
+    width: 100%;
     background-image: linear-gradient( to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     border-radius: 0 0 0 90px;
 }
 
 .header-content {
-    width: 100vw;
+    width: 100%;
     height: 600px;
     background-image: url(/images/bg-pattern-intro.svg);
     background-position: -300px -1350px;
@@ -44,13 +44,9 @@ body {
     height: 70px;
 }
 
-.header-nav__blogr h1 {
-    font-size: 40px;
-}
-
-.header-nav__blogr a {
-    text-decoration: none;
-    color: hsl(0, 0%, 100%);
+.header-nav__blogr {
+    display: flex;
+    align-items: center;
 }
 
 .header-nav__info {
@@ -203,7 +199,7 @@ body {
     padding-bottom: 100px;
 }
 
-.main__btn1 {
+.header__main-btn1 {
     width: 140px;
     height: 50px;
     border-radius: 30px;
@@ -213,13 +209,13 @@ body {
     margin-right: 8px;
 }
 
-.main__btn1:hover {
+.header__main-btn1:hover {
     color: hsl(0, 0%, 100%);
     background-color: hsl(355, 100%, 74%);
     transition: .2s;
 }
 
-.main__btn2 {
+.header__main-btn2 {
     width: 140px;
     height: 50px;
     border-radius: 30px;
@@ -231,7 +227,7 @@ body {
     margin-left: 8px;
 }
 
-.main__btn2:hover {
+.header__main-btn2:hover {
     background-color: hsl(0, 0%, 100%);
     color: hsl(356, 100%, 66%);
     transition: .2s;
@@ -239,4 +235,158 @@ body {
 
     /* Main */
 
-    
+.main {
+    height: 1000px;
+    width: 100%;
+}
+
+.main__content {
+    padding: 160px 0 0 0;
+}
+
+.content__future-title {
+    text-align: center;
+}
+
+.main__content-future {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 160px;
+}
+
+.content__future-title h2 {
+    color: hsl(208, 49%, 24%);
+    font-size: 40px;
+    font-family: Overpass, Ubuntu, sans-serif;
+    font-weight: 600;
+}
+
+.content__future-text {
+    padding-top: 238px;
+    width: 550px;
+}
+
+.content__future-text h3 {
+    font-size: 25px;
+    color: hsl(208, 49%, 24%);
+    font-family: Overpass, Ubuntu, sans-serif;
+    font-weight: 600;
+    padding-bottom: 40px;
+}
+
+.content__future-text p {
+    line-height: 30px;
+    padding-bottom: 40px;
+    color: hsl(207, 13%, 34%);
+}
+
+.main__content-image {
+    background: url(/images/illustration-editor-desktop.svg);
+    width: 550px;
+    height: 884px;
+    background-repeat: no-repeat;
+}
+
+
+    /* Cell */
+
+.cell {
+    margin-top: 50px;
+    height: 400px;
+    width: 100%;
+    background: linear-gradient(to right ,hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    border-radius: 0 100px;
+}
+
+.cell__back {
+    height: 100%;
+    background: url(/images/bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: -215px -500px;
+}
+
+.cell__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 160px;
+}
+
+.cell__content-image {
+    position: relative;
+    top: -60px;
+    left: -35px;
+}
+
+.cell__conten-text {
+    padding: 120px 0;
+    width: 690px;
+}
+
+.cell__conten-text h2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 40px;
+    font-family: Overpass, Ubuntu, sans-serif;
+    font-weight: 600;
+}
+
+.cell__conten-text p {
+    width: 590px;
+    margin-top: 40px;
+    line-height: 30px;
+    color: hsl(0, 0%, 90%);
+}
+
+    /* Laptop */
+
+.laptop {
+    height: 1000px;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.laptop__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.laptop__content-image {
+    background: url(/images/illustration-laptop-desktop.svg);
+    width: 600px;
+    height: 884px;
+    background-repeat: no-repeat;
+    background-position: -275px;
+}
+
+.laptop__future-text {
+    width: 550px;
+    margin-top: 255px;
+}
+
+.laptop__future-text h3 {
+    font-size: 25px;
+    color: hsl(208, 49%, 24%);
+    font-family: Overpass, Ubuntu, sans-serif;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.laptop__future-text p {
+    line-height: 30px;
+    padding-bottom: 40px;
+    color: hsl(207, 13%, 34%);
+}
+
+    /* Footer */
+
+.footer {
+    background: hsl(240, 10%, 16%);
+    height: 360px;
+    border-radius: 0 100px 0 0;
+}
+
+.footer__content {
+    padding: 70px;
+}
